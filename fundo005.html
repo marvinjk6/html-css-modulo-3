@@ -9,21 +9,29 @@
     <style>
 
         body {
+            height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             /* colocando imagem para preencher a viewport 
             mas dependendo do tamanho da imagem ela vai ser cortada com o COVER
             se usar o CONTAIN
             */
-            height: 100vh;
             background-size: cover; 
+            /* deixa a imagem de fundo fixa*/
+            background-attachment: fixed;
+
+            /*Shorthand - background
+                                                ainda não funciona                 
+            color > image > position > repeat > [size]     > attachment
+            
+            */
         }   
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -39,6 +47,10 @@
     <main>
 
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nostrum aliquid quod, aperiam temporibus labore vitae non deleniti hic quidem sequi eaque provident recusandae molestiae eius facere dignissimos, pariatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae impedit illum quibusdam vel pariatur! Ipsa pariatur aperiam ratione tempora debitis corrupti asperiores iste ab quas? Consequatur rerum distinctio at nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nostrum aliquid quod, aperiam temporibus labore vitae non deleniti hic quidem sequi eaque provident recusandae molestiae eius facere dignissimos, pariatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae impedit illum quibusdam vel pariatur! Ipsa pariatur aperiam ratione tempora debitis corrupti asperiores iste ab quas? Consequatur rerum distinctio at nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nostrum aliquid quod, aperiam temporibus labore vitae non deleniti hic quidem sequi eaque provident recusandae molestiae eius facere dignissimos, pariatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae impedit illum quibusdam vel pariatur! Ipsa pariatur aperiam ratione tempora debitis corrupti asperiores iste ab quas? Consequatur rerum distinctio at nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nostrum aliquid quod, aperiam temporibus labore vitae non deleniti hic quidem sequi eaque provident recusandae molestiae eius facere dignissimos, pariatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae impedit illum quibusdam vel pariatur! Ipsa pariatur aperiam ratione tempora debitis corrupti asperiores iste ab quas? Consequatur rerum distinctio at nobis!</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nostrum aliquid quod, aperiam temporibus labore vitae non deleniti hic quidem sequi eaque provident recusandae molestiae eius facere dignissimos, pariatur maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae impedit illum quibusdam vel pariatur! Ipsa pariatur aperiam ratione tempora debitis corrupti asperiores iste ab quas? Consequatur rerum distinctio at nobis!</p>
 
     </main>
